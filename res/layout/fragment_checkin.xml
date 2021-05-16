@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.kuantansejahtera_a170567.Dashboard">
+
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Tap on camera to choose photo of place"
+        android:textAlignment="center"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="170dp"
+            android:layout_height="170dp"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="20dp"
+            android:background="@drawable/ic_icon_camera_black_24dp"
+            android:scaleType="centerCrop" />
+
+        <ProgressBar
+
+            android:id="@+id/progressbar"
+            android:layout_width="match_parent"
+            android:layout_height="194dp"
+            android:layout_centerInParent="true"
+            android:visibility="gone"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="301dp">
+
+        <EditText
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/TimeCheckIn"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="1dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="20dp"
+            android:hint="Enter Name Place" />
+
+        <EditText
+            android:id="@+id/time"
+            android:layout_width="371dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/name"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="18dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="22dp"
+            android:hint="Enter Time Check In" />
+
+        <EditText
+            android:id="@+id/date"
+            android:layout_width="373dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/time"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="20dp"
+            android:hint="Enter Date Check In" />
+
+        <TimePicker
+            android:id="@+id/TimeCheckIn"
+            android:layout_width="wrap_content"
+            android:layout_height="84dp"
+            android:hint="Enter Time of Check In" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/textViewVerified"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Verified"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Large" />
+
+    <Button
+        android:id="@+id/buttonSave"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/rounded_button_solid"
+        android:paddingLeft="55dp"
+        android:paddingRight="55dp"
+        android:text="Save"
+        android:textAllCaps="false" />
+
+
+</LinearLayout>

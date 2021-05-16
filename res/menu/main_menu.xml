@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.kuantansejahtera_a170567.Dashboard">
+
+    <item
+        android:id="@+id/menu_setting"
+        android:orderInCategory="100"
+        android:title="Setting"
+        app:showAsAction="never"/>
+    <item
+        android:id="@+id/menu_emergency"
+        android:orderInCategory="100"
+        android:icon="@drawable/ic_call_black_24dp"
+        android:title="Emergency"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/menu_profile"
+        android:orderInCategory="100"
+        android:icon="@drawable/ic_profile_black_24dp"
+        android:title="Profile"
+        app:showAsAction="always" />
+</menu>
